@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+:root{
+    --colorblack:#000;
+    --colorwhite:#fff;
+    --btrncolor:#0995f2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    font-size: 62%;
+}
+
+/****************Antd Override***********************************/
+
+input{
+    border-radius: 2px !important;
+    border: 1px solid rgba(128, 128, 128, 0.815) !important;
+    height: 40px !important;
+}
+input:focus,.ant-picker input:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid grey !important;
+}
+label{
+    font-size: 1.4rem !important;
+    font-weight: bold;
+    color: var(--colorblack) !important;
+}
+.primary-button{
+    background-color: var(--btrncolor);
+    border-color: #0995f2;
+    height: 40px;
+    width: 100%;
+    font-size: 2rem;
+    color: var(--colorwhite);
+    width: max-content;
+}
+.anchor{
+    color: var(--colorblack) !important;
+    text-decoration: underline !important;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.ant-picker{
+    height: 40px !important;
+    border-radius: 2px !important;
+    border: 1px solid rgba(128, 128, 128, 0.815) !important;
+   
+}
+.ant-picker-input input{
+    border: none !important;
+    border-radius: 2px;
+}
+
+/**********************Common Styling****************************/
+
+.card{
+    box-shadow: 0 0 2px rgba(128, 128, 128, 0.815);
+    border-radius: 0 !important;
+}
+.card-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.normal-text{
+    font-size: 1.6rem;
+}
+.spinner-parent{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1111;
+}
+.spinner-border{
+    width: 8rem;
+    height: 8rem;
+    color: #fff;
+}
+.page-title{
+    font-size: 2.5rem;
+    color: var(--colorblack);
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+
+/********************Authontication Page***********************/
+
+.authontication{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #07a7f1e9;
+}
+.auth-form{
+    width: 400px;
+}
+.ant-form-item{
+    margin: 10px 0 !important;
+}
+.authontication .card-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-color: #ffc300;
+    max-width: max-content;
+    padding: 5px 15px;
+    margin-left: -40px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
